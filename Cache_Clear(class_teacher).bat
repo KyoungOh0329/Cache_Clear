@@ -1,6 +1,6 @@
 @echo off
 REM close edge
-taskkill /f /im msedge.exe
+taskkill /f /im msedge.exe 
 
 @echo off
 echo Clearing browser cache, history, and internet usage...
