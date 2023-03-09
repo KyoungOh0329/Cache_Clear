@@ -1,4 +1,8 @@
 @echo off
+REM close edge
+taskkill /f /im msedge.exe
+
+@echo off
 echo Clearing browser cache, history, and internet usage...
 REM Chrome
 rd /s /q "%LOCALAPPDATA%\Google\Chrome\User Data\Default\Cache"
@@ -9,7 +13,7 @@ echo Clearing Edge browser cache...
 echo.
 
 rem clear Edge browser cache
-cd "C:\Users\user\AppData\Local\Microsoft\Edge\User Data\PnaclTranslationCache"
+cd "C:\Users\user\AppData\Local\Microsoft\Edge\User Data\Default\Network"
 del /q /s *
 
 echo Edge browser cache cleared successfully.
